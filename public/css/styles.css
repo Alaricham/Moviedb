@@ -1,0 +1,124 @@
+:root {
+    --first: #040020;
+    --second: rgb(5, 0, 66);
+    --third: rgb(72, 2, 122);
+    --fourth: #209ab4;
+    --fifth: #a9a9a9;
+}
+
+body {
+    background-color: var(--first);
+    color: var(--fifth);
+    font-size: 12px;
+}
+
+.backdrop {
+    position: fixed;
+    background-image: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .2;
+    height: 600px;
+    width: 100%;
+}
+
+.dived {
+    position: relative;
+}
+
+.element {
+    margin: 10px 0;
+}
+
+.container img:hover {
+    box-shadow: 4px 4px 20px var(--third),
+        -4px -4px 20px var(--third);
+}
+
+.image-box {
+    position: relative;
+    width: 520px;
+}
+
+.member {
+    display: inline-block;
+    margin: 2px 10px;
+    padding: 3px;
+}
+
+.member .img-cast {
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-position-y: -20px;
+}
+
+#cast-list {
+    background-color: rgba(72, 2, 122, .7);
+    margin: 30px 0;
+    width: 100vw;
+    text-align: center;
+}
+.member p {
+    margin: 2px;
+}
+.image-box img {
+    width: 520px;
+}
+.container {
+    padding-top: 90px;
+}
+
+iframe {
+    position: relative;
+
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    padding-top: 90px;
+}
+
+#cont {
+    position: absolute;
+    background-color: rgba(72, 2, 122, .7);
+    padding: 5px;
+
+    border: 2px solid var(--third);
+    opacity: 1;
+}
+
+#nav-backdrop {
+    position: fixed;
+    width: 100%;
+    background-color: var(--second);
+    box-shadow: 2px 2px 2px var(--third);
+    z-index: 2;
+}
+
+#nav {
+    margin: 10px 20px;
+    width: 500px;
+}
+
+#nav button {
+    background-color: var(--third);
+    border-color: var(--fifths);
+
+}
+
+#nav input {
+    display: inline-block;
+    width: 300px;
+}
+
+#nav a {
+    display: inline-block;
+    font-size: 30px;
+    padding-right: 10px;
+    color: var(--fourth);
+    position: relative;
+    top: 3px;
+
+}

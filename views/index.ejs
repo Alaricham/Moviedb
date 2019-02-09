@@ -1,0 +1,15 @@
+<% include ./partials/header.ejs %>
+<div class="container">
+    <div class="row">
+        <% if(movieSearch.results.length === 0) { %>
+        <h1>No results were found</h1>
+        <% } else { %>
+        <% movieSearch.results.forEach((movie) => { %>
+        <div class="col-sm-12 col-md-6 col-lg-4 element">
+            <a href='/movie/<%= movie.id %>'><img src=" http://image.tmdb.org/t/p/w185/<%= movie.poster_path %>"></a>
+        </div>
+        <%  }); %>
+        <% } %>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>
